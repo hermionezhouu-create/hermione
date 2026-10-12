@@ -1,0 +1,619 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>周榆璇 Hermione｜政府補助 AI 培訓</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap">
+<style>
+/* 版面：品牌列 → 左文右照首屏 → 數字＋案例 → 服務卡 → 深靛引薦區 → 121 → 聯絡。固定淺色主題 */
+:root{
+  color-scheme:light;
+  --bg:#F4F5FA;        /* 帶一點靛色的冷白 */
+  --paper:#FFFFFF;
+  --ink:#1B1F3B;       /* 主文字 */
+  --ink-2:#3B4166;     /* 次文字，保持深色 */
+  --brand:#4656C2;     /* 穩鑽靛藍（logo 色加深，文字對比夠） */
+  --brand-soft:#E6E9F8;
+  --navy:#1A1F4D;      /* 深色引薦區 */
+  --cta:#2F3A9C;       /* 深靛藍 CTA（品牌色加深一階） */
+  --cta-dark:#222B7A;
+  --gold:#E8B563;      /* 暖金：深色區的強調 */
+  --gold-dark:#9A6A14; /* 淺底上的暖金文字 */
+  --line:#DDE1F0;
+  --sans:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;
+  --num:"Montserrat","Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.7;-webkit-font-smoothing:antialiased;padding-bottom:88px}
+@media(min-width:900px){body{padding-bottom:0}}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding-inline:20px}
+h1,h2,h3{text-wrap:balance;margin:0;line-height:1.3;font-weight:900}
+p{margin:0}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:15px;font-weight:700;letter-spacing:.12em;color:var(--brand)}
+.eyebrow::before{content:"";width:28px;height:2px;border-radius:2px;background:var(--brand)}
+section{padding-block:64px}
+.sec-head{display:grid;gap:10px;margin-bottom:32px}
+.sec-head h2{font-size:clamp(28px,4.4vw,38px);color:var(--ink)}
+
+/* 按鈕 */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:54px;padding:0 26px;border-radius:999px;font-size:17px;font-weight:700;text-decoration:none;transition:transform .15s,background .15s;cursor:pointer;border:0;font-family:var(--sans)}
+.btn-cta{background:var(--cta);color:#fff;box-shadow:0 8px 22px -10px rgba(47,58,156,.7)}
+.btn-cta:hover{background:var(--cta-dark);transform:translateY(-1px)}
+.btn-ghost{background:transparent;color:var(--brand);border:1.5px solid var(--brand)}
+.btn-ghost:hover{background:var(--brand);color:#fff}
+.btn:focus-visible,.copy:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+
+/* 品牌列 */
+.brandbar{padding-block:18px 0}
+.brandbar .wrap{display:flex;align-items:center;gap:12px}
+.brandbar img{width:44px;height:44px;border-radius:12px;display:block}
+.brandbar b{font-size:18px;color:var(--ink)}
+.brandbar span{font-family:var(--num);font-size:13px;font-weight:700;letter-spacing:.14em;color:var(--brand)}
+
+/* ===== Hero ===== */
+.hero{position:relative;padding-block:28px 56px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+.hero-text{display:grid;gap:18px;min-width:0}
+.tag{justify-self:start;display:inline-flex;align-items:center;gap:8px;padding:7px 16px;border-radius:999px;background:var(--brand-soft);font-size:15px;font-weight:700;color:var(--brand)}
+.name{font-size:clamp(48px,7vw,78px);color:var(--ink);letter-spacing:.04em}
+.name .en{display:block;font-family:var(--num);font-weight:800;font-size:.38em;color:var(--brand);letter-spacing:.16em;margin-top:6px}
+.role{font-size:18px;font-weight:500;color:var(--ink-2)}
+.role b{color:var(--ink)}
+.role .ln:first-child{display:block}
+.hook{font-size:clamp(21px,2.6vw,25px);font-weight:900;color:var(--ink);padding-top:16px;border-top:1px solid var(--line)}
+.hook em{font-style:normal;color:var(--brand)}
+.tagline{font-size:18px;color:var(--ink-2)}
+.hero-btns{display:flex;flex-wrap:wrap;gap:12px;padding-top:6px}
+.hero-photo{position:relative;border-radius:28px;overflow:hidden;aspect-ratio:900/990;max-width:100%;box-shadow:0 30px 60px -32px rgba(26,31,77,.45)}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 10%;display:block}
+
+@media(max-width:760px){
+  .hero{padding-block:20px 40px}
+  .hero-grid{display:block;position:relative}
+  .hero-photo{position:absolute;right:-20px;top:-20px;width:58%;height:400px;aspect-ratio:auto;border-radius:0;box-shadow:none}
+  .hero-photo::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,var(--bg) 0%,rgba(244,245,250,0) 40%),linear-gradient(0deg,var(--bg) 0%,rgba(244,245,250,0) 34%)}
+  .hero-photo img{object-position:46% 6%}
+  .hero-text{position:relative;z-index:2}
+  .name{font-size:48px;max-width:62%}
+  .role{max-width:60%;font-size:16.5px}
+  .role .ln{display:block;white-space:nowrap}
+  .tag{font-size:14px;padding:6px 12px}
+  .hook{margin-top:64px}
+  .hero-btns .btn{flex:1 1 100%}
+}
+
+/* ===== 實績 ===== */
+.proof{padding-block:8px 64px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.stat{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:24px;display:grid;gap:2px}
+.stat .big{font-family:var(--num);font-size:clamp(34px,4.4vw,46px);font-weight:800;color:var(--brand);line-height:1.15;font-variant-numeric:tabular-nums}
+.stat .big.zh{font-family:var(--sans);font-weight:900;font-size:clamp(24px,2.8vw,30px);line-height:1.45}
+.stat .lbl{font-size:17px;font-weight:500;color:var(--ink)}
+.cases{margin-top:16px;display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.case{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:24px;display:flex;gap:16px;align-items:flex-start}
+.case .ind{flex:0 0 auto;padding:6px 14px;border-radius:999px;background:var(--brand);color:#fff;font-weight:700;font-size:15px}
+.case h3{font-size:19px;color:var(--ink);margin-bottom:4px}
+.case p{font-size:16.5px;color:var(--ink-2)}
+.case strong{color:var(--gold-dark)}
+@media(max-width:760px){.stats,.cases{grid-template-columns:1fr}.case{flex-direction:column;gap:10px}}
+
+/* ===== 服務 ===== */
+.services{background:var(--paper);border-block:1px solid var(--line)}
+.svc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.svc{display:flex;gap:16px;align-items:flex-start;padding:24px;border-radius:18px;background:var(--bg);border:1px solid var(--line);min-width:0}
+.ico{flex:0 0 52px;height:52px;border-radius:50%;background:var(--brand);color:#fff;display:grid;place-items:center}
+.ico svg{width:26px;height:26px}
+.svc h3{font-size:20px;color:var(--ink);margin-bottom:4px}
+.svc p{font-size:16.5px;color:var(--ink-2);line-height:1.65}
+@media(max-width:640px){.svc-grid{grid-template-columns:1fr}}
+
+/* ===== 為什麼 ===== */
+.why-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.why{display:flex;gap:16px;align-items:center;padding:22px 24px;background:var(--paper);border:1px solid var(--line);border-radius:18px}
+.why .mark{flex:0 0 46px;height:46px;border-radius:50%;background:var(--brand-soft);display:grid;place-items:center;color:var(--brand)}
+.why .mark svg{width:22px;height:22px}
+.why h3{font-size:19px;color:var(--ink)}
+.why p{font-size:16.5px;color:var(--ink-2)}
+@media(max-width:640px){.why-grid{grid-template-columns:1fr}}
+
+/* ===== 引薦（深色） ===== */
+.refer{background:var(--navy);color:#EEF0FB;position:relative;overflow:hidden}
+.refer::before{content:"";position:absolute;width:560px;height:560px;right:-200px;top:-220px;border-radius:50%;background:radial-gradient(circle,rgba(110,128,230,.28),transparent 65%)}
+.refer .wrap{position:relative}
+.refer .eyebrow{color:#B9C2F5}
+.refer .eyebrow::before{background:#B9C2F5}
+.slogan{font-weight:900;font-size:clamp(28px,4.4vw,42px);color:#fff;margin-bottom:28px;text-wrap:balance}
+.ref-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.ref{padding:24px;border-radius:20px;background:rgba(255,255,255,.06);border:1px solid rgba(185,194,245,.3);display:grid;gap:8px;align-content:start}
+.ref .lv{justify-self:start;font-size:15px;font-weight:700;padding:4px 12px;border-radius:999px;background:rgba(185,194,245,.18);color:#DDE2FB}
+.ref h3{font-size:21px;color:#fff}
+.ref p{font-size:16.5px;color:#E3E6F8}
+.ref.dream{border:1.5px solid var(--gold);box-shadow:0 0 0 4px rgba(232,181,99,.18),0 18px 40px -16px rgba(232,181,99,.55);background:rgba(232,181,99,.09)}
+.ref.dream .lv{background:var(--gold);color:var(--navy)}
+.ears{margin-top:28px;padding:24px;border-radius:20px;background:rgba(255,255,255,.05);border:1px dashed rgba(185,194,245,.45)}
+.ears h3{font-size:20px;color:#fff;margin-bottom:12px}
+.ears ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,1fr);gap:10px 20px}
+.ears li{position:relative;padding-left:22px;font-size:17px;color:#EEF0FB}
+.ears li::before{content:"";position:absolute;left:2px;top:.72em;width:8px;height:8px;border-radius:50%;background:var(--gold)}
+.intro{margin-top:28px;padding:26px;border-radius:20px;background:#fff;color:var(--ink)}
+.intro-top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:12px}
+.intro-top h3{font-size:20px;color:var(--brand)}
+.copy{display:inline-flex;align-items:center;min-height:46px;padding:0 20px;border-radius:999px;border:0;background:var(--cta);color:#fff;font-weight:700;font-size:16px;cursor:pointer;font-family:var(--sans)}
+.copy:hover{background:var(--cta-dark)}
+.intro blockquote{margin:0;font-size:17.5px;line-height:1.85;color:var(--ink);padding-left:16px;border-left:3px solid var(--brand)}
+.vision{margin-top:28px;display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.vision .k{font-size:16px;font-weight:700;color:#B9C2F5;letter-spacing:.1em}
+.vision p{font-size:clamp(19px,2.4vw,23px);font-weight:700;color:#fff}
+.vision b{font-family:var(--num);color:var(--gold);font-size:1.2em}
+@media(max-width:860px){.ref-grid{grid-template-columns:1fr}.ears ul{grid-template-columns:1fr}}
+
+/* ===== 121 ===== */
+.talk{max-width:860px}
+.talk-chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{display:inline-block;padding:8px 16px;border-radius:999px;background:var(--paper);border:1px solid var(--line);font-size:17px;color:var(--ink)}
+.chip.hot{background:var(--brand);color:#fff;border-color:var(--brand);font-size:18px;font-weight:700;padding:10px 18px}
+
+/* ===== 聯絡 ===== */
+.contact{text-align:center;padding-top:16px}
+.contact-card{max-width:640px;margin:0 auto;background:var(--paper);border:1px solid var(--line);border-radius:28px;padding:40px 24px;display:grid;justify-items:center;gap:14px;box-shadow:0 20px 50px -34px rgba(26,31,77,.45)}
+.avatar{width:136px;height:136px;border-radius:50%;object-fit:cover;border:4px solid var(--paper);box-shadow:0 0 0 2px var(--brand)}
+.contact h2{font-size:clamp(26px,4vw,34px)}
+.contact .who{font-size:17px;color:var(--ink-2)}
+.contact .btns{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;padding-top:4px}
+.contact .info{font-size:16.5px;color:var(--ink-2)}
+
+footer{padding-block:28px 36px;border-top:1px solid var(--line);display:grid;justify-items:center;gap:10px;text-align:center}
+footer .fl{display:flex;align-items:center;gap:10px;font-weight:700;color:var(--ink)}
+footer .fl img{width:36px;height:36px;border-radius:9px}
+footer p{font-size:16px;color:var(--ink-2)}
+
+/* 手機底部固定列 */
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:20;display:flex;gap:10px;padding:12px 16px calc(12px + env(safe-area-inset-bottom,0px));background:rgba(244,245,250,.96);backdrop-filter:blur(8px);border-top:1px solid var(--line)}
+.bar .btn{flex:1;min-height:52px;padding:0 12px;font-size:16.5px}
+@media(min-width:900px){.bar{display:none}}
+.toast{position:fixed;left:50%;bottom:100px;transform:translateX(-50%);background:var(--ink);color:#fff;padding:10px 20px;border-radius:999px;font-size:16px;z-index:30}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+<style>
+/* ===== 精品化：字體＋金色細線＋細框標籤 ===== */
+:root{--serif:"Noto Serif TC","Songti TC","PMingLiU",serif;--display:"Cormorant Garamond","Times New Roman",serif;--gold-line:#C9A464}
+.name,.sec-head h2,.slogan,.contact h2,.hook,.case h3,.svc h3,.why h3,.ref h3{font-family:var(--serif)}
+.name{font-weight:900;letter-spacing:.06em}
+.name .en{font-family:var(--display);font-weight:600;font-size:.34em;letter-spacing:.32em;color:var(--brand)}
+.sec-head h2,.slogan{font-weight:700}
+.hook{font-weight:700}
+.eyebrow::before{background:var(--gold-line);height:1px}
+.refer .eyebrow::before{background:var(--gold)}
+.tag{background:var(--paper);border:1px solid var(--gold-line)}
+.hero-photo::after{content:"";position:absolute;inset:12px;border:1px solid rgba(201,164,100,.7);border-radius:20px;pointer-events:none}
+.avatar{box-shadow:0 0 0 1.5px var(--gold-line)}
+.case .ind{background:transparent;color:var(--brand);border:1.5px solid var(--brand)}
+.chip.hot{background:var(--paper);color:var(--brand);border:1.5px solid var(--brand)}
+.stat{box-shadow:0 10px 30px -26px rgba(26,31,77,.5)}
+@media(max-width:760px){.hero-photo::after{display:none}}
+
+/* ===== logo 色為主：按鈕變亮、引薦區改品牌藍 ===== */
+:root{--bg:#F6F7FC;--brand:#586DC8;--brand-soft:#E8ECFA;--cta:#586DC8;--cta-dark:#4759B5;--navy:#34439C;--line:#DFE3F2}
+.btn-cta{box-shadow:0 10px 24px -12px rgba(88,109,200,.75)}
+.refer::before{background:radial-gradient(circle,rgba(160,176,240,.35),transparent 65%)}
+.refer .eyebrow{color:#DCE2FB}
+.ref{background:rgba(255,255,255,.09);border-color:rgba(220,226,251,.38)}
+.ears{background:rgba(255,255,255,.07);border-color:rgba(220,226,251,.5)}
+.hero-photo{box-shadow:0 30px 60px -34px rgba(88,109,200,.45)}
+.bar{background:rgba(246,247,252,.96)}
+@media(max-width:760px){.hero-photo{box-shadow:none}.hero-photo::before{background:linear-gradient(90deg,var(--bg) 0%,rgba(246,247,252,0) 40%),linear-gradient(0deg,var(--bg) 0%,rgba(246,247,252,0) 34%)}}
+
+/* ===== 精品化 v3：照片近拍、斜體英文名、明體數字、藍色收斂、中性暖白 ===== */
+:root{--bg:#FAF9F6;--line:#E7E3DA;--ink-num:#262B4D}
+.name .en{font-family:var(--display);font-style:italic;font-weight:600;font-size:.5em;letter-spacing:.02em;color:var(--brand);margin-top:2px}
+.stat .big,.stat .big.zh{font-family:var(--serif);font-weight:900;color:var(--ink-num);font-size:clamp(28px,3.4vw,38px);line-height:1.25}
+.stat .big.zh{font-size:clamp(22px,2.6vw,28px)}
+.case .ind{color:var(--ink-num);border-color:var(--gold-line)}
+.chip.hot{color:var(--ink-num);border-color:var(--gold-line)}
+.brandbar img{width:34px;height:34px;border-radius:9px}
+.brandbar b{font-size:16px}
+.services{background:#FFFFFF}
+.svc{background:var(--bg)}
+.hero-photo img{object-position:50% 0%}
+.bar{background:rgba(250,249,246,.96)}
+@media(max-width:760px){.hero-photo{box-shadow:none;right:-48px;width:56%}.hero-photo img{object-position:55% 0%}.hero-photo::before{background:linear-gradient(90deg,var(--bg) 0%,rgba(250,249,246,0) 40%),linear-gradient(0deg,var(--bg) 0%,rgba(250,249,246,0) 34%)}}
+
+/* ===== 版本二：政府補助區 ===== */
+.brandbar .wrap{flex-wrap:wrap}
+.brandbar .partner{margin-left:auto;font-style:normal;font-size:14px;font-weight:700;color:var(--ink-num);border:1px solid var(--gold-line);border-radius:999px;padding:4px 12px;background:var(--paper)}
+.hl3{display:flex;flex-wrap:wrap;gap:0;margin-top:2px}
+.hl3 div{padding:0 18px;border-left:1px solid var(--line);min-width:0}
+.hl3 div:first-child{padding-left:0;border-left:0}
+.hl3 b{display:block;font-family:var(--serif);font-weight:900;font-size:19px;color:var(--ink-num);line-height:1.35}
+.hl3 span{display:block;font-size:15px;color:var(--ink-2)}
+.svc .more{display:inline-block;margin-top:6px;font-weight:700;color:var(--brand);text-decoration:none}
+.subsidy{background:#fff;border-block:1px solid var(--line)}
+.sub-lead{font-size:18px;color:var(--ink-2)}
+.taxcheck{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px 20px;padding:20px 24px;border-radius:18px;background:var(--bg);border:1px solid var(--gold-line)}
+.taxcheck b{font-size:19px;color:var(--ink)}
+.taxcheck p{font-size:16.5px;color:var(--ink-2)}
+.plan-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:20px}
+.plan-card{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:26px;display:grid;gap:12px;align-content:start;min-width:0;box-shadow:0 14px 34px -28px rgba(26,31,77,.45)}
+.plan-card .kind{justify-self:start;font-size:15px;font-weight:700;color:var(--brand);border:1.5px solid var(--brand);border-radius:999px;padding:3px 12px}
+.plan-card h3{font-family:var(--serif);font-size:23px;color:var(--ink)}
+.perks{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.perks li{padding:14px 16px;border-radius:14px;background:var(--bg);border:1px solid var(--line)}
+.perks li b{display:block;font-size:17.5px;color:var(--ink)}
+.perks li span{display:block;font-size:16px;color:var(--ink-2);line-height:1.65;margin-top:2px}
+.perks li.mine{background:var(--brand-soft);border-color:var(--brand)}
+.perks li.mine b{color:var(--brand)}
+.money-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.money{padding:14px 16px;border-radius:14px;border:1px solid var(--gold-line);background:#FFFCF5}
+.money span{display:block;font-size:15px;color:var(--ink-2);font-weight:500}
+.money b{display:block;font-family:var(--serif);font-weight:900;font-size:clamp(26px,3.2vw,32px);color:var(--ink-num);line-height:1.2;font-variant-numeric:tabular-nums}
+.money b small{font-size:.5em;margin-right:3px;color:var(--gold-dark)}
+.ten{margin-top:36px}
+.ten>h3{font-family:var(--serif);font-size:24px;color:var(--ink)}
+.ten>p{font-size:17px;color:var(--ink-2);margin-top:4px}
+.ten-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:16px}
+.need{border:1px solid var(--line);border-radius:20px;padding:20px;background:var(--paper);min-width:0}
+.need-h{display:flex;align-items:center;gap:14px}
+.need-h .ico{flex:0 0 48px;height:48px}
+.need h4{font-family:var(--serif);font-size:20px;color:var(--ink);line-height:1.35;margin:0}
+.need h4 small{display:block;font-family:var(--sans);font-size:15px;color:var(--brand);font-weight:700}
+.need ul{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:8px}
+.need li{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;padding:10px 14px;border-radius:12px;background:var(--bg);font-size:17px;font-weight:500;color:var(--ink);line-height:1.45}
+.need li::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--gold-line);flex:none}
+.need li.me{background:var(--brand-soft);box-shadow:inset 0 0 0 1.5px var(--brand);font-weight:700}
+.need li.me::before{background:var(--brand)}
+.need li em{margin-left:auto;font-style:normal;font-size:14px;font-weight:700;color:#fff;background:var(--brand);padding:2px 10px;border-radius:999px;white-space:nowrap}
+.steps{margin-top:36px}
+.steps>h3{font-family:var(--serif);font-size:24px;color:var(--ink)}
+.step-grid{display:grid;grid-template-columns:repeat(4,1fr);margin-top:14px;border-top:1px solid var(--gold-line)}
+.step{padding:18px 18px 4px 0}
+.step+.step{padding-left:18px;border-left:1px solid var(--line)}
+.step small{font-size:14px;font-weight:700;letter-spacing:.14em;color:var(--gold-dark)}
+.step b{display:block;font-size:18px;color:var(--ink);margin-top:4px}
+.step p{font-size:16.5px;color:var(--ink-2)}
+.fine{margin-top:24px;font-size:16px;color:var(--ink-2)}
+@media(max-width:900px){.ten-grid{grid-template-columns:1fr}.step-grid{grid-template-columns:1fr 1fr}.step:nth-child(3){padding-left:0;border-left:0}}
+@media(max-width:760px){.plan-grid{grid-template-columns:1fr}.hl3 div{padding:0 12px}.hl3 b{font-size:17px}.hl3 span{font-size:14px}.brandbar .partner{margin-left:0}}
+@media(max-width:420px){.money-row{grid-template-columns:1fr}.step-grid{grid-template-columns:1fr}.step,.step+.step{padding-left:0;border-left:0;border-bottom:1px solid var(--line);padding-bottom:12px}}
+
+.stats-strip{display:grid;grid-template-columns:repeat(3,1fr);background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:18px 8px;box-shadow:0 10px 30px -26px rgba(26,31,77,.5)}
+.stats-strip div{text-align:center;padding:0 10px;min-width:0}
+.stats-strip div+div{border-left:1px solid var(--line)}
+.stats-strip b{display:block;font-family:var(--serif);font-weight:900;font-size:clamp(22px,3.2vw,32px);color:var(--ink-num);line-height:1.25}
+.stats-strip span{display:block;font-size:15px;color:var(--ink-2);margin-top:2px}
+@media(max-width:420px){.stats-strip{padding:14px 4px}.stats-strip div{padding:0 6px}.stats-strip b{font-size:20px}.stats-strip span{font-size:14px}}
+.taxcheck.after{margin-top:20px}
+.perks li em.hi{display:inline-block;margin:6px 0 4px;font-style:normal;font-weight:900;font-size:17px;color:var(--ink-num);background:#FFF4DC;border:1px solid var(--gold-line);border-radius:8px;padding:3px 10px}
+
+/* 分頁：服務業／製造業 */
+.tabs{display:inline-flex;gap:4px;margin-top:4px;padding:5px;background:var(--brand-soft);border-radius:999px}
+.tab{all:unset;cursor:pointer;padding:11px 30px;border-radius:999px;font-size:17px;font-weight:700;color:var(--ink-2)}
+.tab.on{background:var(--paper);color:var(--brand);box-shadow:0 2px 10px rgba(26,31,77,.12)}
+.tab:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.panel{margin-top:16px;background:var(--paper);border:1px solid var(--line);border-radius:24px;padding:28px 26px;box-shadow:0 14px 34px -28px rgba(26,31,77,.45)}
+.panel>.kind{display:inline-block;font-size:15px;font-weight:700;color:var(--brand);border:1.5px solid var(--brand);border-radius:999px;padding:3px 12px}
+.panel>h3{font-family:var(--serif);font-size:24px;color:var(--ink);margin-top:12px}
+.panel-sub{font-size:17px;color:var(--ink-2);margin-top:2px}
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+.plan{border:1px solid var(--line);border-radius:18px;padding:20px;background:var(--bg);min-width:0}
+.plan.mine{background:var(--brand-soft);border-color:var(--brand)}
+.plan h4{font-family:var(--serif);font-size:20px;color:var(--ink);margin:0}
+.plan em.hi,.ben em.hi{display:inline-block;margin:10px 0 6px;font-style:normal;font-weight:900;font-size:17px;color:var(--ink-num);background:#FFF4DC;border:1px solid var(--gold-line);border-radius:8px;padding:3px 10px}
+.plan p,.ben p{font-size:16px;color:var(--ink-2);line-height:1.65}
+.plan ul{margin:10px 0 0;padding-left:1.1em;font-size:16.5px;color:var(--ink)}
+.plan .mine-tag{display:inline-block;margin-top:12px;font-size:14px;font-weight:700;color:#fff;background:var(--brand);padding:3px 12px;border-radius:999px}
+.panel .ten{margin-top:26px;padding-top:22px;border-top:1px solid var(--line)}
+.bens{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+.ben{border:1px solid var(--line);border-radius:18px;padding:22px;background:var(--bg);min-width:0}
+.ben.gold{background:#FFFCF5;border-color:var(--gold-line)}
+.ben-num{font-family:var(--serif);font-weight:900;font-size:clamp(30px,4vw,40px);line-height:1.15;color:var(--ink-num);font-variant-numeric:tabular-nums}
+.ben-num small{font-size:.45em;margin:0 4px;color:var(--gold-dark)}
+.ben h4{font-family:var(--serif);font-size:19px;color:var(--ink);margin:10px 0 4px}
+@media(max-width:900px){.plans,.bens{grid-template-columns:1fr}}
+@media(max-width:420px){.panel{padding:22px 18px}.tab{padding:10px 24px}}
+
+/* 10 項服務：三分類切換 */
+.stabs{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px}
+.stab{all:unset;box-sizing:border-box;cursor:pointer;display:flex;align-items:center;gap:12px;padding:14px 16px;border-radius:16px;border:1.5px solid var(--line);background:var(--bg);min-width:0}
+.stab .sico{flex:0 0 44px;height:44px;border-radius:50%;background:var(--brand-soft);color:var(--brand);display:grid;place-items:center}
+.stab .sico svg{width:22px;height:22px}
+.stab>span:last-child{font-family:var(--serif);font-weight:700;font-size:18px;color:var(--ink);line-height:1.35}
+.stab small{display:block;font-family:var(--sans);font-size:14.5px;font-weight:700;color:var(--brand)}
+.stab.on{border-color:var(--brand);background:var(--brand-soft);box-shadow:0 8px 20px -14px rgba(88,109,200,.8)}
+.stab.on .sico{background:var(--brand);color:#fff}
+.stab:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.spanel{margin-top:12px;padding:18px;border-radius:18px;background:var(--bg);border:1px solid var(--line)}
+.spanel ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.spanel li{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;padding:12px 16px;border-radius:12px;background:var(--paper);font-size:17px;font-weight:500;color:var(--ink);line-height:1.45;border:1px solid var(--line)}
+.spanel li::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--gold-line);flex:none}
+.spanel li.me{background:var(--brand-soft);border-color:var(--brand);font-weight:700}
+.spanel li.me::before{background:var(--brand)}
+.spanel li em{margin-left:auto;font-style:normal;font-size:14px;font-weight:700;color:#fff;background:var(--brand);padding:2px 10px;border-radius:999px;white-space:nowrap}
+@media(max-width:760px){.stabs{grid-template-columns:1fr}.spanel ul{grid-template-columns:1fr}}
+
+/* 手機：淡出只留邊緣，不蓋到臉 */
+@media(max-width:760px){.hero-photo::before{background:linear-gradient(90deg,var(--bg) 0%,rgba(250,249,246,0) 12%),linear-gradient(0deg,var(--bg) 0%,rgba(250,249,246,0) 28%),linear-gradient(180deg,var(--bg) 0%,rgba(250,249,246,0) 8%)}}
+
+/* 三分類改成跟服務業／製造業一樣的膠囊按鈕 */
+.stabs-pill{margin-top:14px}
+.stabs-pill .stab{all:unset;cursor:pointer;padding:11px 26px;border-radius:999px;font-size:17px;font-weight:700;color:var(--ink-2)}
+.stabs-pill .stab.on{background:var(--paper);color:var(--brand);box-shadow:0 2px 10px rgba(26,31,77,.12)}
+.stabs-pill .stab:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.sp-title{font-family:var(--serif);font-weight:700;font-size:19px;color:var(--ink);margin:0 0 12px}
+@media(max-width:420px){.stabs-pill .stab{padding:10px 16px;font-size:16px}}
+
+/* 推薦項目：拿掉紫色底，改白底＋金框，更清楚 */
+.plan.mine{background:var(--paper);border:2px solid var(--gold-line);box-shadow:0 12px 26px -18px rgba(154,106,20,.45)}
+.spanel li.me{background:var(--paper);border:1.5px solid var(--gold-line)}
+
+/* 字體統一：全部思源黑體，用粗細分層級 */
+:root{--serif:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;--display:var(--serif);--num:var(--serif);--sans:var(--serif)}
+.name{font-weight:900;letter-spacing:.04em}
+.name .en{font-style:normal;font-weight:700;font-size:.36em;letter-spacing:.12em}
+.sec-head h2,.slogan,.contact h2,.plan-card h3,.panel>h3,.ten>h3,.steps>h3{font-weight:900}
+.hook{font-weight:700}
+.case h3,.svc h3,.why h3,.ref h3,.plan h4,.need h4,.sp-title,.ben h4{font-weight:700}
+.stats-strip b,.hl3 b,.ben-num,.money b,.stat .big{font-weight:900;letter-spacing:.01em}
+</style>
+
+<div class="brandbar">
+  <div class="wrap"><img src="logo.webp" alt="穩鑽 AI 學院 logo"><b>穩鑽 AI 學院</b><span>AI ACADEMY</span><em class="partner">台灣黃頁補助方案合作夥伴</em></div>
+</div>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <span class="tag">政府補助 AI 培訓｜已服務 100+ 企業</span>
+      <h1 class="name">周榆璇<span class="en">Hermione</span></h1>
+      <p class="role"><span class="ln"><b>穩鑽 AI 學院</b>｜創辦人・AI 顧問</span> <span class="ln">BNI 長佑鑽石分會・</span><span class="ln">企業 AI 培訓代表</span></p>
+      <p class="hook">公司想學 AI？<br>學費可以讓<em>政府出</em></p>
+      <p class="tagline">老闆帶兩位同仁學 AI，申請全程有人陪</p>
+      <div class="hl3"><div><b>3 個名額</b><span>每間企業</span></div><div><b>學費補助</b><span>服務業</span></div><div><b>NT$120,000</b><span>製造業培訓補助</span></div></div>
+      <div class="hero-btns">
+        <a class="btn btn-cta" href="https://line.me/ti/p/fJgEGSmbsC" target="_blank" rel="noopener">加 LINE 約 121</a>
+        <a class="btn btn-ghost" href="#subsidy">看補助內容</a>
+      </div>
+    </div>
+    <div class="hero-photo"><img src="hero.webp" alt="周榆璇 Hermione 形象照"></div>
+  </div>
+</header>
+
+<section class="proof" aria-label="實績">
+  <div class="wrap">
+    <div class="stats-strip">
+      <div><b>100+</b><span>服務企業</span></div>
+      <div><b>500+</b><span>位培訓學員</span></div>
+      <div><b>經濟部補助</b><span>老闆負擔更輕</span></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="subsidy" id="subsidy">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">政府補助 AI 培訓</span>
+      <h2>你的公司可以拿到什麼</h2>
+      <p class="sub-lead">服務業、製造業各有方案，點下面切換查看</p>
+    </div>
+
+    <div class="tabs" role="tablist" aria-label="補助方案類別">
+      <button class="tab on" role="tab" aria-selected="true" aria-controls="p-svc" id="t-svc" type="button">服務業</button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="p-mfg" id="t-mfg" type="button">製造業</button>
+    </div>
+
+    <div class="panel" id="p-svc" role="tabpanel" aria-labelledby="t-svc">
+      <span class="kind">服務業專屬｜稅籍 G–S 類</span>
+      <h3>經濟部｜服務業強化韌性補助</h3>
+      <p class="panel-sub">合作單位：台灣黃頁</p>
+      <div class="plans">
+        <div class="plan"><h4>AI 業務參謀</h4><em class="hi">6 個月 Google SEO 前三頁曝光</em><p>台灣黃頁 B2B 數位平台，多一個產品曝光管道</p><ul><li>詢價網站建置</li><li>產業文章 6 篇</li><li>每月詢價單</li></ul></div>
+        <div class="plan"><h4>AI 賦能工具</h4><em class="hi">10,000 點數任意使用</em><p>不用自己訂閱一堆 AI 工具，一套點數全部搞定</p><ul><li><b>做行銷</b>：AI 生成圖片、影片、DM</li><li><b>選商品</b>：電商爆品企劃、選品分析</li><li><b>查法規</b>：食品添加物、稅務法規</li><li><b>當特助</b>：AI 翻譯、AI 策略顧問</li></ul></div>
+        <div class="plan mine"><h4>企業成長加速服務</h4><em class="hi">10 項服務擇 1</em><p>選「AI 行銷自動化實戰班」，3 位同仁一起上課</p><ul><li>老闆帶 2 位同仁</li><li>4 小時學會 13 個 AI 工具</li><li>當場做出行銷影片</li></ul><span class="mine-tag">穩鑽 AI 學院開課</span></div>
+      </div>
+
+      <div class="ten">
+        <h3>企業成長加速服務是什麼？10 項任選 1 項</h3>
+        <p>10 項服務都可以由穩鑽協助申請與安排</p>
+        <div class="tabs stabs-pill" role="tablist" aria-label="企業成長加速服務分類">
+          <button class="stab" role="tab" aria-selected="false" aria-controls="n1" id="s1" type="button">行銷曝光</button>
+          <button class="stab on" role="tab" aria-selected="true" aria-controls="n2" id="s2" type="button">課程培訓</button>
+          <button class="stab" role="tab" aria-selected="false" aria-controls="n3" id="s3" type="button">健檢諮詢</button>
+        </div>
+        <div class="spanel" id="n1" role="tabpanel" aria-labelledby="s1" hidden>
+          <p class="sp-title">想要更多客人上門</p>
+          <ul><li>網紅媒合美食開箱貼文</li><li>品牌媒體曝光新聞稿</li><li>LINE 官方帳號經營輔導</li><li>品牌數位賦能升級服務</li></ul>
+        </div>
+        <div class="spanel" id="n2" role="tabpanel" aria-labelledby="s2">
+          <p class="sp-title">想讓團隊更會做事</p>
+          <ul><li class="me">AI 行銷自動化實戰班<em>穩鑽開課</em></li><li>客源穩定成長策略班</li><li>市場拓展與品牌定位實戰班</li><li>高效領導溝通黃金法則培訓班</li></ul>
+        </div>
+        <div class="spanel" id="n3" role="tabpanel" aria-labelledby="s3" hidden>
+          <p class="sp-title">想讓公司更安心</p>
+          <ul><li>企業法律風險健檢服務</li><li>企業軟硬體資訊安檢與諮詢</li></ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel" id="p-mfg" role="tabpanel" aria-labelledby="t-mfg" hidden>
+      <span class="kind">製造業專屬</span>
+      <h3>AI 產業競爭力輔導</h3>
+      <p class="panel-sub">適合紡織、生技、印刷、食品、塑膠、金屬加工等製造業</p>
+      <div class="bens">
+        <div class="ben"><div class="ben-num">6<small>個月</small></div><em class="hi">Google SEO 前三頁曝光</em><p>台灣黃頁 B2B 數位平台，多一個產品曝光管道</p></div>
+        <div class="ben gold"><div class="ben-num"><small>NT$</small>120,000</div><h4>政府培訓補助</h4><p>每小時補助 NT$2,000 × 30 小時 × 2 人。扣除發票稅額，實拿約 NT$115,000</p></div>
+        <div class="ben"><div class="ben-num"><small>NT$</small>15,000</div><h4>企業只需自付</h4><p>派 2 位員工上滿 30 小時 AI 課程，能力直接留在團隊身上</p></div>
+      </div>
+    </div>
+
+    <div class="taxcheck after">
+      <div><b>想知道你的公司屬於哪一類嗎？</b><p>輸入統一編號，馬上知道是服務業還是製造業</p></div>
+      <a class="btn btn-cta" href="https://www.web66.com.tw/web/QA?command=checkP30Taxno" target="_blank" rel="noopener">輸入統編查詢</a>
+    </div>
+
+    <p class="fine">※ 實際補助金額與申請資格，以經濟部補助方案公告為準</p>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">服務內容</span>
+      <h2>從學會 AI，到真的用 AI 省下時間和金錢</h2>
+    </div>
+    <div class="svc-grid">
+      <div class="svc">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M8 20h8M12 16v4"/><path d="m8 10 2 2 4-4"/></svg></span>
+        <div><h3>企業 AI 培訓實戰課</h3><p>每月在商務中心開班，給老闆、高階主管、業務</p></div>
+      </div>
+      <div class="svc">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V8l7-4 7 4v13"/><path d="M9 21v-5h6v5M9 11h.01M15 11h.01"/></svg></span>
+        <div><h3>企業包班／一對一</h3><p>派講師到公司，教老闆或幫員工開課</p></div>
+      </div>
+      <div class="svc">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1 7 17M17 7l2.1-2.1"/></svg></span>
+        <div><h3>AI 系統導入顧問</h3><p>打卡、算薪、POS 這類流程，幫你用 AI 自動化</p></div>
+      </div>
+      <div class="svc">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 13h7M9 17h5"/></svg></span>
+        <div><h3>補助申辦協助</h3><p>經濟部服務業強化韌性補助，陪你一起申請</p><a class="more" href="#subsidy">看補助內容 →</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">為什麼找榆璇</span>
+      <h2>教一整套做法，看實際成果</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why"><span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 6H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span><div><h3>可搭配政府補助</h3><p>老闆負擔更輕，更容易開始</p></div></div>
+      <div class="why"><span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg></span><div><h3>目標導向</h3><p>教跨 AI 工具的完整做法，不是只教單一工具</p></div></div>
+      <div class="why"><span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15 14.5c3 0 6 1.8 6 5.5"/></svg></span><div><h3>堅強團隊</h3><p>學霸駭客級工程師＋IT 企業實務專家</p></div></div>
+      <div class="why"><span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20h18M6 16l4-5 3 3 5-7"/><path d="M15 7h3v3"/></svg></span><div><h3>看得見的成果</h3><p>省多少時間、省多少成本，算給你看</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="refer" id="refer">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow">請幫榆璇引薦</span></div>
+    <p class="slogan">AI 培訓找榆璇，效率提升賺大錢</p>
+    <div class="ref-grid">
+      <div class="ref">
+        <span class="lv">理想引薦</span>
+        <h3>想用 AI 降本增效的開店老闆</h3>
+        <p>餐飲、搬家、貿易、禮贈品、美業、包材印刷、空調、包車</p>
+      </div>
+      <div class="ref">
+        <span class="lv">合作夥伴</span>
+        <h3>共同服務中小企業老闆的專業人士</h3>
+        <p>記帳士、商務中心負責人、商標專利師、餐飲顧問、律師</p>
+      </div>
+      <div class="ref dream">
+        <span class="lv">★ 夢幻引薦</span>
+        <h3>製造業老闆，或擁有 2 間公司以上的負責人</h3>
+        <p>紡織、生技、印刷、食品、塑膠、金屬加工</p>
+      </div>
+    </div>
+
+    <div class="ears">
+      <h3>聽到這些話，就想到榆璇</h3>
+      <ul>
+        <li>「員工每天都在做重複的事」</li>
+        <li>「想用 AI，但不知道從哪開始」</li>
+        <li>「人手不夠，請不到人」</li>
+        <li>「聽說有補助可以上 AI 課」</li>
+      </ul>
+    </div>
+
+    <div class="intro">
+      <div class="intro-top">
+        <h3>一句話介紹榆璇</h3>
+        <button class="copy" id="copyIntro" type="button">複製介紹</button>
+      </div>
+      <blockquote id="introText">我介紹你認識榆璇，她是穩鑽 AI 學院的創辦人，專門幫中小企業老闆導入 AI。她的課可以搭配經濟部補助。有一位漁產批發老闆上完 4 小時課，就自己做出 POS 系統，每月還省下維護費。你們公司如果想用 AI 省人力、省成本，跟她聊聊一定有收穫！</blockquote>
+    </div>
+
+    <div class="vision">
+      <span class="k">我的目標</span>
+      <p>2027 年底前，幫 <b>350</b> 間中小企業用補助完成 AI 培訓</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap talk">
+    <div class="sec-head">
+      <span class="eyebrow">121 聊天話題</span>
+      <h2>找榆璇聊這些，馬上熟</h2>
+    </div>
+    <div class="talk-chips">
+      <span class="chip hot">🏓 匹克球</span>
+      <span class="chip hot">🏸 羽球</span>
+      <span class="chip hot">🏠 大學一週租出 23 間房</span>
+      <span class="chip">⛳ 高爾夫</span>
+      <span class="chip">🏊 游泳</span>
+      <span class="chip">🖌️ 書法</span>
+      <span class="chip">☕ 美食・咖啡廳</span>
+      <span class="chip">🃏 德州撲克・麻將</span>
+      <span class="chip">🎫 搶票高手</span>
+      <span class="chip">📚 商業課程控</span>
+      <span class="chip">🐎 打馬球</span>
+      <span class="chip">✏️ 學習</span>
+      <span class="chip">📖 閱讀</span>
+      <span class="chip">✈️ 北美旅遊</span>
+      <span class="chip">🎹 鋼琴</span>
+      <span class="chip">🎻 小提琴</span>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="contact-card">
+      <img class="avatar" src="avatar.webp" alt="周榆璇大頭照">
+      <h2>約個 121 聊聊</h2>
+      <p class="who">周榆璇 Hermione｜穩鑽 AI 學院 創辦人</p>
+      <div class="btns">
+        <a class="btn btn-cta" href="https://line.me/ti/p/fJgEGSmbsC" target="_blank" rel="noopener">加 LINE 約 121</a>
+        <a class="btn btn-ghost" href="https://lin.ee/WwRvSYW" target="_blank" rel="noopener">穩鑽官方 LINE</a>
+      </div>
+      <p class="info">Email：hermionezhouu@gmail.com<br>台北市大安區</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="fl"><img src="logo.webp" alt="">穩鑽科技有限公司</div>
+  <p>BNI 長佑鑽石分會｜補助資格與內容以主辦單位公告為準</p>
+</footer>
+
+<nav class="bar" aria-label="快速聯絡">
+  <a class="btn btn-cta" href="https://line.me/ti/p/fJgEGSmbsC" target="_blank" rel="noopener">加 LINE 約 121</a>
+  <a class="btn btn-ghost" href="https://lin.ee/WwRvSYW" target="_blank" rel="noopener">官方 LINE</a>
+</nav>
+
+<div class="toast" id="toast" hidden>已複製</div>
+
+<script>
+(function(){
+  var toast=document.getElementById('toast'),t;
+  function show(m){toast.textContent=m;toast.hidden=false;clearTimeout(t);t=setTimeout(function(){toast.hidden=true},1800)}
+  function sel(el){try{var r=document.createRange();r.selectNodeContents(el);var s=window.getSelection();s.removeAllRanges();s.addRange(r)}catch(e){}}
+  var q=document.getElementById('introText');
+  document.getElementById('copyIntro').addEventListener('click',function(){
+    var txt=q.textContent.trim();
+    if(navigator.clipboard&&navigator.clipboard.writeText){
+      navigator.clipboard.writeText(txt).then(function(){show('介紹已複製')},function(){sel(q);show('已選取，請長按複製')});
+    }else{sel(q);show('已選取，請長按複製')}
+  });
+})();
+
+document.querySelectorAll('.tab').forEach(function(t){t.addEventListener('click',function(){document.querySelectorAll('.tab').forEach(function(x){var on=x===t;x.classList.toggle('on',on);x.setAttribute('aria-selected',on);document.getElementById(x.getAttribute('aria-controls')).hidden=!on;});});});
+
+document.querySelectorAll('.stab').forEach(function(t){t.addEventListener('click',function(){document.querySelectorAll('.stab').forEach(function(x){var on=x===t;x.classList.toggle('on',on);x.setAttribute('aria-selected',on);document.getElementById(x.getAttribute('aria-controls')).hidden=!on;});});});
+</script>
+
+</body></html>
